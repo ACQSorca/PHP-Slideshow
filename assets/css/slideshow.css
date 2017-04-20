@@ -1,0 +1,171 @@
+
+/* BEGIN slideshow */
+#slideshow, .slide {
+    width: 1000px;
+    height: 500px;
+}
+
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid black;
+    background-color: black;
+    display: inline-block;
+}
+
+#carousel {
+    height: 100%;
+    width: 2000%; /* This will allow for 20 slides; increase if more are needed for some reason */
+    position: absolute;
+    transition: .75s; /* This is what creates the animation */
+}
+
+.slide {
+    height: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide img {
+    height: 100%;
+}
+
+.slide-info {
+    color: white;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .33);
+    text-align: left;
+}
+
+.slide-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.slide-info a:hover {
+    color: gray;
+    box-shadow: none;
+}
+
+h2.slide-title {
+    margin: 6pt;
+}
+
+span.slide-description {
+    margin: 6pt;
+}
+
+#left-arrow, #right-arrow {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    z-index: 30;
+    padding: 0;
+    background: center/50% no-repeat;
+    border: 0;
+
+}
+
+#left-arrow {
+    background-image: url(../img/slideshow-icons/arrow-right.png);
+    float: left;
+}
+
+#right-arrow {
+    background-image: url(../img/slideshow-icons/arrow-left.png);
+    float: right;
+}
+
+#left-arrow:focus, #right-arrow:focus {
+    outline: 0;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+    background-size: 75%;
+}
+
+#slide-icon-container {
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    padding: 0 .25em;
+}
+
+.slide-icon {
+    height: 100%;
+    width: 20px;
+    padding: 0;
+    background: transparent url(../img/slideshow-icons/slide-icon_unselected.png) center/75% no-repeat;
+    border: none;
+	display: inline-block;
+}
+
+/* END slideshow */
+
+/* BEGIN item-list */
+.item-list {
+    text-align: center;
+}
+
+.item {
+    width: 250px;
+    height: 300px;
+    margin: 25px;
+    padding: .25em;
+    display: inline-block;
+    background-color: white;
+    border: 4px solid gray;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.item-url {
+    text-decoration: none;
+    color: white;
+}
+
+.item-url:hover {
+    color: gray;
+}
+
+.item-img {
+    width: 100%;
+    margin: auto;
+}
+
+.item-price, .item-description {
+    background-color: white;
+    color: black;
+    padding: .25em;
+}
+
+.item-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.item-description {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: .5em;
+    text-align: left;
+}
+
+#product-img {
+    height: 450px;
+    padding: 0 3em;
+    float: left;
+}
