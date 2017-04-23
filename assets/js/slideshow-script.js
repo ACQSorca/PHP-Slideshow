@@ -1,3 +1,10 @@
+/*
+Version 0.9.0
+By Addison C. Quijano Sorca
+GitHub: ACQSorca
+https://acqsorca.github.io
+*/
+
 function main() {
     // BEGIN slideshow
     var slideshow = document.getElementById("slideshow"),
@@ -14,6 +21,33 @@ function main() {
         shift = 0,
         i = 0;
     //slideIcons[currentSlide].style.backgroundImage = selectedIconImage;
+
+
+    function resizeSlides() {
+        // Finds the width of the containing slideshow div
+        var slideshowWidth = slideshow.offsetWidth;
+
+        /* Goes through each slide in the carousel
+         * (the slides array holds references to each slide)
+         * and assigns the width of the contianing slideshow
+         * to the width of each slide
+         */
+        for (i = 0; i < slides.length; i += 1) {
+            slides[i].style.width = slideshowWidth + "px";
+        }
+
+        /* (Side effect)
+         * Sets the variable slideWidth to the actual width of the slideshow
+         * as determined in by the first line of code in this function
+         */
+        slideWidth = slideshowWidth;
+
+        return slideshowWidth;
+    }
+
+    resizeSlides();
+    window.addEventListener("resize", resizeSlides);
+
 
     // Puts shift into slideshow style
     // Puts value of shift into the style of the carousel
