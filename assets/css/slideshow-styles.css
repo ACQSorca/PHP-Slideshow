@@ -169,3 +169,18 @@ span.slide-description {
     padding: 0 3em;
     float: left;
 }
+
+/* Uncomment and change these URLs if needed */
+/*
+#left-arrow {
+    background-image: url(../img/slideshow-icons/arrow-right.png);
+}
+
+#right-arrow {
+    background-image: url(../img/slideshow-icons/arrow-left.png);
+}
+
+.slide-icon {
+    background-image: url(../img/slideshow-icons/slide-icon_unselected.png);
+}
+*/
