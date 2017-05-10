@@ -13,14 +13,27 @@ At the end of the HTML file, link to the slideshow-script.js file
 Follow the instructions depending on whether you want a basic HTML slideshow or a PHP slideshow.
 
 ### Static Version
-For the static site, remove the includes directory and the dynamic.php file. Create a div with the id of "slideshow". Inside of that div, create another div with the id of "carousel" and a style of "left: 0;". This div will hold the slides.
+For the static site, remove the includes directory and the dynamic.php file. Create a div with the id of "slideshow". Inside of that div, create another div with the id of "carousel" and a style of "left: 0;". This div will hold the slides. Also add divs for the slideshow arrows and slideshow icons after the carousel but inslide of the slideshow, as such.
 
 ~~~~
 <div id="slideshow">
+
     <div id="carousel" style="left: 0;">
         SLIDES GO HERE
+    </div> <!-- END #carousel -->
+
+    <div id="left-arrow"></div>
+    <div id="right-arrow"></div>
+
+    <div id="slide-icon-container">
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
     </div>
-</div>
+
+</div> <!-- END #slideshow -->
+
+
 ~~~~
 
 Each slide will be a div with elements that should look like this.
