@@ -16,8 +16,8 @@ function main() {
         slideWidth = slideshow.offsetWidth,
         currentSlide = 0,
         slideIcons = document.getElementsByClassName("slide-icon"),
-        selectedIconImage = "url(assets/img/slideshow-icons/slide-icon_selected.png)",
-        unselectedIconImage = "url(assets/img/slideshow-icons/slide-icon_unselected.png)",
+        selectedIconImage = "url(slideshow-assets/slideshow-icons/slide-icon_selected.png)",
+        unselectedIconImage = "url(slideshow-assets/slideshow-icons/slide-icon_unselected.png)",
         shift = 0,
         i = 0;
     //slideIcons[currentSlide].style.backgroundImage = selectedIconImage;

@@ -73,12 +73,12 @@ span.slide-description {
 }
 
 #left-arrow {
-    background-image: url(../img/slideshow-icons/arrow-right.png);
+    background-image: url(slideshow-icons/arrow-right.png);
     float: left;
 }
 
 #right-arrow {
-    background-image: url(../img/slideshow-icons/arrow-left.png);
+    background-image: url(slideshow-icons/arrow-left.png);
     float: right;
 }
 
@@ -103,7 +103,7 @@ span.slide-description {
     height: 100%;
     width: 20px;
     padding: 0;
-    background: transparent url(../img/slideshow-icons/slide-icon_unselected.png) center/75% no-repeat;
+    background: transparent url(slideshow-icons/slide-icon_unselected.png) center/75% no-repeat;
     border: none;
 	display: inline-block;
 }
